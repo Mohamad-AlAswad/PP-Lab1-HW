@@ -39,6 +39,11 @@ public class ArrayCount extends RecursiveAction {
     }
 
     public void computeStream() {
-        result = Arrays.stream(arr).asLongStream().parallel().filter(e -> e == x).count();
+        result = Arrays
+                .stream(arr)
+                .asLongStream()
+                .parallel()
+                .filter(e -> e == x)
+                .count();
     }
 }
